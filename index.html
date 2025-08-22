@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DolphinDev — تطوير تطبيقات iOS باحترافية</title>
+  <meta name="description" content="DolphinDev — استوديو تطوير تطبيقات iOS. أعمالنا، سياسة الخصوصية، الشفافية الإعلانية app-ads.txt، ودعم العملاء." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DolphinDev — تطوير تطبيقات iOS" />
+  <meta property="og:description" content="استوديو عربي لصناعة تطبيقات iOS بجودة عالية وتجربة مستخدم بسيطة." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-DOMAIN/" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand:#0b3b6e; /* dark blue (matches your logo theme) */
+      --accent:#00d2ff;
+      --ink:#0f172a;   /* slate-900 */
+      --muted:#475569; /* slate-600 */
+      --bg:#ffffff;
+      --soft:#f1f5f9;  /* slate-100 */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:"Cairo",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit}
+    .container{max-width:1120px;margin:0 auto;padding:0 20px}
+
+    /* Header */
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e7eb;z-index:20}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .logo{width:40px;height:40px;border-radius:10px;background:var(--brand);position:relative;overflow:hidden}
+    .logo:before{content:"";position:absolute;inset:8px 10px 12px 10px;border-radius:50% 50% 40% 40%;background:#fff;opacity:.95;transform:rotate(-10deg)} /* simple white dolphin mark */
+    .brand h1{margin:0;font-size:20px;font-weight:800}
+    .menu{display:flex;gap:18px}
+    .menu a{color:var(--muted);text-decoration:none;font-weight:700}
+    .menu a:hover{color:var(--ink)}
+
+    /* Hero */
+    .hero{padding:36px 0;display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+    .hero h2{margin:0 0 10px;font-size:34px;font-weight:800;line-height:1.25}
+    .hero p{margin:0 0 16px;color:var(--muted);font-size:18px}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:8px}
+    .btn{display:inline-flex;align-items:center;gap:10px;background:var(--brand);color:#fff;text-decoration:none;padding:12px 18px;border-radius:12px;font-weight:800;font-size:16px;transition:.2s transform ease, .2s opacity ease}
+    .btn:hover{transform:translateY(-2px)}
+    .ghost{background:#fff;border:1px solid #e5e7eb;color:var(--ink)}
+
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .tag{background:var(--soft);color:var(--ink);padding:6px 10px;border-radius:999px;font-size:13px}
+
+    .mock{width:100%;border:1px solid #e5e7eb;border-radius:16px;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+
+    /* Apps */
+    .section{padding:24px 0}
+    .section h3{margin:0 0 10px;font-size:22px;font-weight:800}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{border:1px solid #e5e7eb;border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .badge{display:inline-flex;align-items:center;font-size:12px;padding:4px 8px;border-radius:999px;background:#ecfeff;border:1px solid #bae6fd;color:#0369a1;font-weight:700}
+    .card h4{margin:0;font-size:18px;font-weight:800}
+    .muted{color:var(--muted)}
+
+    /* About */
+    .about{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .about .item{border:1px solid #e5e7eb;border-radius:14px;padding:14px}
+    .about .item h5{margin:0 0 8px;font-size:17px}
+
+    /* Footer */
+    footer{border-top:1px solid #e5e7eb;margin-top:30px}
+    .foot{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap;padding:16px 0;color:var(--muted);font-size:14px}
+    .links{display:flex;gap:16px;flex-wrap:wrap}
+    .links a{color:var(--muted);text-decoration:none}
+    .links a:hover{text-decoration:underline}
+
+    /* Responsive */
+    @media (max-width:960px){ .hero{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/">
+        <span class="logo" aria-hidden="true"></span>
+        <h1>DolphinDev</h1>
+      </a>
+      <nav class="menu" aria-label="روابط أساسية">
+        <a href="/">الرئيسية</a>
+        <a href="#apps">التطبيقات</a>
+        <a href="/app-ads.txt" target="_blank" rel="noopener">الشفافية الإعلانية</a>
+        <a href="mailto:dolphindev2025@gmail.com">تواصل</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h2>تطوير تطبيقات <span style="color:var(--brand)">iOS</span> بجودة عالية وبساطة في التجربة</h2>
+        <p>نصمّم تطبيقات عربية بواجهة واضحة وأداء ممتاز، مع اهتمام حقيقي بالخصوصية والشفافية.</p>
+        <div class="cta">
+          <a class="btn" href="#apps">شاهد أعمالنا</a>
+          <a class="btn ghost" href="mailto:dolphindev2025@gmail.com">راسلنا</a>
+        </div>
+        <div class="tags" aria-label="وسوم">
+          <span class="tag">iOS</span>
+          <span class="tag">Swift / Flutter</span>
+          <span class="tag">تجربة مستخدم</span>
+          <span class="tag">خصوصية</span>
+        </div>
+      </div>
+      <div class="mock">منطقة عرض لقطات التطبيقات (Screenshot)</div>
+    </section>
+
+    <!-- Apps -->
+    <section id="apps" class="section">
+      <h3>التطبيقات</h3>
+      <div class="grid">
+        <article class="card">
+          <span class="badge">جديد</span>
+          <h4>سؤال وجواب — مسابقات عامة وألغاز وأمثال</h4>
+          <p class="muted">وضع فرد
